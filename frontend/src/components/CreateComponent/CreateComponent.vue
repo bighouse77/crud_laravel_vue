@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <form>
+  <div class="main">
+    <form class="form">
       <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label">Email address</label>
         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -24,3 +24,20 @@ export default {
   name: 'CreateComponent',
 }
 </script>
+
+<style scoped>
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form {
+  padding: 20px;
+  text-align: left;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+}
+</style>
